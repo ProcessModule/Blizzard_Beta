@@ -1,1 +1,1 @@
-# Blizzard . LOL
+(https://discord.gg/blizzardlol)
