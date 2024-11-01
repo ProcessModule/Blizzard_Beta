@@ -1,9 +1,9 @@
-getgenv().blizzard = {
+getgenv().Blizzard = {
     Luarmor = { Key = "" },
 
     Startup = { 
         Hash = 0xAB0, 
-        Intro = true, 
+        Intro = false, -- Removed Cause of Solara
         Delay = 0.5
     },
     --
