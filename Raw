@@ -1,4 +1,4 @@
-script_key=getgenv().blizzard.Luarmor.Key;
+script_key=getgenv().Blizzard.Luarmor.Key;
 --[[
     This script has been licensed using Luarmor
       Luarmor v3.8b, Lua whitelisting system
