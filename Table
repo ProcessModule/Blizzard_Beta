@@ -3,7 +3,7 @@ getgenv().blizzard = {
 
     Startup = { 
         Hash = 0xAB0, 
-        Intro = true, -- // Removed Cause Of Solara
+        Intro = true, 
         Delay = 0.5
     },
     --
@@ -39,7 +39,7 @@ getgenv().blizzard = {
             }, 
         },
         ["Chams"] = { 
-            ["Enabled"] = false,
+            ["Enabled"] = false, 
             ["Color"] = Color3.fromRGB(181, 209, 228), 
             ["Outline"] = Color3.fromRGB(0, 0, 0), 
             ["Transparency"] = 0.1
@@ -50,16 +50,16 @@ getgenv().blizzard = {
         ['Enabled'] = { true, ['Toggle Key'] = { false, "V"} },
         ['Sticky Mode'] = false,
         ['Target Mode'] = "FOV", -- Target, FOV
-        ['Silent Mode'] = "Aggressive", -- Safe, Aggressive
-        ['Target Sync'] = true, -- having this on will make your silent aim target your aimbot target if you're on target mode
+        ['Silent Mode'] = "Safe", -- Safe, Aggressive
+        ['Target Sync'] = false, -- having this on will make your silent aim target your aimbot target if you're on target mode
         ['Target Bind'] = "Z",
         ['Hit Mode'] = "Circle", -- Circle, Box
         ['HitChance'] = 300,
-        ['AntiFloor'] = true,
+        ['AntiFloor'] = false,
         ['HitParts'] = {
             ['Hit Type'] = " Nearest Point", -- Nearest Point, Nearest Part, Blank for hitbones
             ['Nearest Point Type'] = "Partial", -- Scalar, Generic, Absolute, Partial
-            ['HitBones'] = {"Head"},
+            ['HitBones'] = {"HumanoidRootPart"},
             ['Scaling'] = {
                 ['Min'] = 2.5,
                 ['Max'] = 2.5,
@@ -71,11 +71,11 @@ getgenv().blizzard = {
             ['Angular Curve'] = 9.6,
         },
         ['Prediction'] = {
-            ['Automatic'] = false,
+            ['Automatic'] = true,
             ['Ping Based'] = true,
             ['Velocity Type'] = "Regular", -- Regular, Linear, Rot, Angular
             --
-            ['Prediction'] = { 0.12731, 0.12731, 0.12731 },
+            ['Prediction'] = { 0.4225, 0.4225, 0.4225 },
             --
             ['Ping Ranges'] = {
                 ["20 - 30"] = { 0.11120, 0.11120, 0.11120 }, --[[ X,  Y,  Z ]]--
@@ -101,14 +101,14 @@ getgenv().blizzard = {
         ['Drawings'] = {
             ['Field Of View'] = {
                 ['Visible'] = false,
-                ['Radius'] = 200,
+                ['Radius'] = 140,
                 ['Filled'] = false,
                 ['Thickness'] = 1,
                 ['Transparency'] = 0.25,
                 ['Color'] = Color3.fromRGB(255, 0, 0)
             },
             ['Box Field Of View'] = {
-                ['Visible'] = true,
+                ['Visible'] = false,
                 ['Prediction'] = false,
                 ['Radius'] = {
                     ['Width'] = 1, 
@@ -148,17 +148,17 @@ getgenv().blizzard = {
             ['Keybind'] = "MouseButton2" -- HOLD ONLY
         },
         ['Smoothness'] = {
-            ['X'] = 68,
-            ['Y'] = 68,
-            ["StickynessX"] = 2,
-            ["StickynessY"] = 5,
+            ['X'] = 4,
+            ['Y'] = 5,
+            ["StickynessX"] = 1,
+            ["StickynessY"] = 1,
         },
         ['Readjustment'] = {
             ['Enabled'] = false,
             ['Readjustment'] = { 8, 11, 11 }
         },
         ['HitParts'] = {
-            ['HitBones'] = {"Head"},
+            ['HitBones'] = {"HumanoidRootPart"},
             ['Scaling'] = { 
                 ['Min'] = 2.5,
                 ['Max'] = 2.5,
@@ -255,7 +255,7 @@ getgenv().blizzard = {
     },
     --
     ["Menu"] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Position'] = Vector2.new(workspace.CurrentCamera.ViewportSize.X / 2 - 500, workspace.CurrentCamera.ViewportSize.Y / 2 + 100),
         ['Color'] = Color3.fromRGB(140, 164, 201)
     },
