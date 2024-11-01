@@ -1,4 +1,4 @@
-getgenv().Blizzard = {
+getgenv().blizzard = {
     Luarmor = { Key = "" },
 
     Startup = { 
